@@ -2,23 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-    background-color: #E7E7E7;
+    background: linear-gradient(135deg, #374d39, #792eac);
     padding-top: 100px;
+    color: #333;
 }
 
 header {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: 40px;
-}
-
-header img {
-    height: 36px;
-    margin-right: 16px;
 }
 
 header h1 {
@@ -26,10 +22,20 @@ header h1 {
     font-weight: bold;
 }
 
+header img {
+    width: 36px;
+    margin-right: 16px;
+}
+
 .container {
-    max-width: 960px;
+    max-width: 780px;
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 form {
@@ -41,11 +47,17 @@ form {
 }
 
 form input {
-    font-size: 24px;
     background-color: #fff;
+    font-size: 24px;
     border: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #374d39;
     padding: 8px;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    outline: none;
+    border-bottom: 2px solid #792eac;
 }
 
 form button {
@@ -56,42 +68,63 @@ form button {
     border: none;
     cursor: pointer;
     padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #007a2e;
 }
 
 table {
     width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+tbody {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 table th {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid black;
     padding: 16px;
     font-size: 24px;
     font-weight: bold;
 }
 
 table td {
-    padding: 16px 0;
     text-align: center;
     font-size: 18px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 table td img {
     height: 30px;
 }
 
-.resultado {
+.media-final-resultado {
     padding: 8px;
     font-weight: bold;
     color: #fff;
-    background-color: #000;
-    border-radius: 3px;
+    background-color: black;
+    border-radius: 5px;
 }
 
-.aprovado {
+.resultadoAprovado {
     background-color: #009432;
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
 }
 
-.reprovado {
-    background-color: red;
+.resultadoReprovado {
+    background-color: rgb(220, 20, 20);
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
 }
