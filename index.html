@@ -1,58 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Médias</title>
     <link rel="stylesheet" href="./main.css">
+    <title>Agenda de contatos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="./images/logo.png" alt="logo-pagina"/>
-            <h1>Calculadora de Médias</h1>
+            <img src="./images/1f4de.png" alt="Img telefone">
+            <h1>Agenda de Contatos</h1>
         </header>
-        <form id="form-atividade">
-            <input type="text" id="nome-da-atividade" placeholder="Atividade" required/>
-            <input type="number" id="nota-da-atividade" placeholder="Nota" required min="0" max="10"/>
-            <button type="submit">Adicionar +</button>
+        <form id="form" action="">
+            <input type="text" required placeholder="Nome" nome="" id="Nome" />
+            <input type="number" required placeholder="Número do contato" nome="" id="Número" />
+            <button type="submit">Adicionar</button>
         </form>
-        <table cellspacing ="0">
+        <table cellspacing="0">
             <thead>
-                <tr>
+                <tr id="table">
                     <th>
-                        Nome da atividade
+                        Nome do contato
                     </th>
                     <th>
-                        Nota
-                    </th>
-                    <th>
-                        Aprovado?
+                        Número do contato
                     </th>
                 </tr>
             </thead>
             <tbody>
-                
-            </tbody>
             <tfoot>
-                <tr>
-                    <td>
-                        Média Final
-                    </td>
-                    <td id="media-final-valor">
-                        ---
-                    </td>
-                    <td id="media-final-resultado">
-                        <span class=>---</span>
-                    </td>
+                <tr id="row" style="display: none;">
+                    <td id="Nome">Name</td>
+                    <td id="Número">---</td>
                 </tr>
             </tfoot>
         </table>
     </div>
-    <script src="./main.js"></script>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
